@@ -18,3 +18,8 @@ const libros = [
     { titulo: "Estructuras de Datos", anio: 2015, reservas: 60 },
     { titulo: "Sistemas Operativos", anio: 2019, reservas: 110 }
 ]
+
+console.log(insertionSort(libros))
+console.time("insercion por año");
+const librosOrdenados = insertionSort(libros);
+console.timeEnd("insercion por año");
