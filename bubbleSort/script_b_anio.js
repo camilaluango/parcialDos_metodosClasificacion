@@ -21,4 +21,8 @@ const libros = [
     { titulo: "Sistemas Operativos", anio: 2019, reservas: 110 }
    ];
 
-console.log(bubbleSort(libros))
+console.log(bubbleSort(libros));
+
+console.time("bubbleSort por año");
+const librosOrdenados = bubbleSort(libros);
+console.timeEnd("bubbleSort por año")
