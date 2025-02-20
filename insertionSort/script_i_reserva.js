@@ -3,7 +3,7 @@ function insertionSort(arr){
     for (let i = 1; i < n; i++){
         let key = arr[i].reservas;
         let j = i -1;
-        while (j >= 0 && arr[j].anio > key){
+        while (j >= 0 && arr[j].reservas > key){
             arr[j + 1].reservas = arr[j].reservas;
             j = j - 1
         }
